@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-header {
+    position: relative;
+    background-image: url('/img/bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+}
+
+
+.main-navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1e2227ad;
+}
+
+.navbar-menu__items {
+    list-style: none;
+}
+
+.navbar-menu__item {
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar-menu__item:hover {
+    background-color: #333b44;
+    transition: 0.4s ease-in;
+    border-radius: 4px;
+}
+
+.navbar-menu__item a {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.navbar-menu__item:last-child {
+    display: none;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+
+.navbar-logo h1 {
+    font-family: "Poppins", sans-serif;
+    color: #daa520;
+}
+
+.header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    height: 250px;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.header-content h1 {
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    font-size: 55px;
+}
+
+.header-content p {
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    margin: 5px;
+}
+ 
+.header-content a {
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    padding: 10px;
+    background-color: goldenrod;
+    
+}
+
+.header-content a:hover {
+    background-color: rgb(163, 126, 31);
+    transition: 0.4s ease-in;
+} 
+
+.header-content i {
+    margin: 2px;
+}
+
+
+
+.hotel-specs {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spec-box {
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.spec-box h4 { 
+    font-size: 20px;
+}
+
+.spec-box i {
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+.info-section {
+    display: flex;
+    
+}
+
+
+
+
+/* Responsive */
+@media (max-width:640px) {
+    .navbar-menu__item:not(:last-child) {
+        display: none;
+    }
+
+    .navbar-menu__item:last-child {
+        display: block;
+    }
+    
+    .header-content {
+        height: 200px;
+        width: 500px;
+
+    }
+
+    .header-content h1 {
+        font-size: 45px;
+    }
+    .header-content p {
+        font-size: 14px;
+    }
+    .hotel-specs {
+        flex-direction: column;
+        gap: 35px;
+    } 
+
+}

@@ -151,6 +151,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 25px;
+    padding: 15px;
 }
 
 .box {
@@ -245,8 +246,11 @@
 
 .gallery-row img {
     margin: 15px;
-    border: 4px solid rgb(255, 193, 38);
     border-radius: 4px;
+}
+
+.gallery-row img:hover {
+    opacity: 0.3;
 }
 
 

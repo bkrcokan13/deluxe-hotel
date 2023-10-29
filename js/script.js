@@ -19,6 +19,8 @@ function galleryPictures() {
         console.log(element);
         element.style.backgroundImage = `url(${pictures[index]})`;
     });
+
+    
 }
 
 galleryPictures();

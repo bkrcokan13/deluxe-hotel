@@ -280,7 +280,6 @@
 .room-box {
     display: flex;
     flex-direction: column;
-    padding: 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -307,6 +306,62 @@
     font-size: 16px;
 }
 
+
+.personal-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal-info-header {
+    text-align: center;
+    margin:15px;
+    font-family: "Lato", sans-serif;
+}
+
+.personal-info-header h1 {
+    font-size: 70px;
+}
+
+.personal-info-header p {
+    font-size: 16px;
+}
+
+.personal-info-items {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;  
+}
+
+.personal-info-item {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Lato", sans-serif;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.personal-info-item img {
+    border-radius: 1000px;
+}
+
+
+
+.personal-info-details {    
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: #f7ca58;
+    align-items: flex-start;
+    gap: 2px;
+    justify-content: flex-start;
+}
+
+.personal-info-item * {
+    margin: 0.14rem;
+}
 
 /* Responsive */
 @media (max-width:640px) {
@@ -364,6 +419,10 @@
     }
 
     .rooms-types {
+        flex-direction: column;
+    }
+
+    .personal-info-items {
         flex-direction: column;
     }
 }

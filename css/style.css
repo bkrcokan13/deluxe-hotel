@@ -256,7 +256,7 @@
 
 .hotel-rooms {
     display: flex;
-    align-items: center;
+    align-items: center;    
     flex-direction: column;
     justify-content: center;
     gap: 30px;
@@ -280,8 +280,31 @@
 .room-box {
     display: flex;
     flex-direction: column;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
+}
+
+.rooms-types {
+    display: flex;
+    gap: 30px;
+}
+
+.room-title {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    background-color: #e9b73b;
+    color: rgb(37, 37, 37);
+    padding: 20px;
+    width: 100%;
+}
+
+.room-title h1 {
+    font-size: 35px;
+}
+
+.room-title p {
+    font-size: 16px;
 }
 
 
@@ -334,5 +357,13 @@
         height: 100;
         width: 100;
       
+    }
+
+    .hotel-rooms {
+        flex-direction: column;
+    }
+
+    .rooms-types {
+        flex-direction: column;
     }
 }

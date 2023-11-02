@@ -380,6 +380,129 @@
     margin: 0.14rem;
 }
 
+
+.contact-field {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+}
+
+.contact-header h1 {
+    font-size: 60px;
+   
+}
+
+.contact-header p {
+    font-size: 16px;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-bg {
+    width: 70%;
+    height: 550px;
+    background-image: url('/img/bg-2.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+}
+.form-item {
+    margin: 5px;
+}
+
+.form-item label{
+    font-size: 20px;
+    
+}
+
+
+
+.form-item input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(232, 232, 232);
+}
+
+.form-item input[type="text"]:focus {
+    outline: none;
+}
+
+.form-item textarea {
+    resize: none;    
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(232, 232, 232);
+
+
+}
+
+.form-item textarea:focus{
+    outline: none;
+}
+
+.form-item input[type="submit"] {
+    padding: 10px 30px;
+    border: none; 
+    border-radius: 30px;
+    background-color: #f7ca58;
+
+}
+
+.form-item input[type="submit"]:hover {
+    background-color: #e5b335;
+
+}
+
+
+
+
+
+.form-item  * {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+
+
 /* Responsive */
 @media (max-width:640px) {
     .main-navbar {
@@ -441,5 +564,14 @@
 
     .personal-info-items {
         flex-direction: column;
+    }
+
+    .contact-items {
+        flex-direction: column;
+    }
+
+    .contact-bg {
+        width: 100%;
+        margin: 15px;
     }
 }

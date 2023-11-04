@@ -288,7 +288,6 @@
 .room-box {
     display: flex;
     flex-direction: column;
-    padding: 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -299,14 +298,30 @@
 }
 
 .room-title {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: "Lato", sans-serif;
     background-color: #e9b73b;
     color: rgb(37, 37, 37);
     padding: 20px;
+    gap: 5px;
     width: 100%;
 }
 
+
+.room-title a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 12px;
+}
+
+.room-title a:hover {
+    background-color: rgb(163, 126, 31);
+    transition: 0.4s ease-in;
+}
 .room-title h1 {
     font-size: 35px;
 }
@@ -360,6 +375,218 @@
 .blogs-details {
     height: 100%;
     width: 50%;
+}
+
+
+
+
+
+
+
+
+
+.personal-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal-info-header {
+    text-align: center;
+    margin:15px;
+    font-family: "Lato", sans-serif;
+}
+
+.personal-info-header h1 {
+    font-size: 70px;
+}
+
+.personal-info-header p {
+    font-size: 16px;
+}
+
+.personal-info-items {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;  
+}
+
+.personal-info-item {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Lato", sans-serif;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.personal-info-item img {
+    border-radius: 1000px;
+}
+
+
+
+.personal-info-details {    
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: #f7ca58;
+    align-items: flex-start;
+    gap: 2px;
+    justify-content: flex-start;
+}
+
+.personal-info-item * {
+    margin: 0.14rem;
+}
+
+
+.contact-field {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+}
+
+.contact-header h1 {
+    font-size: 60px;
+   
+}
+
+.contact-header p {
+    font-size: 16px;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-bg {
+    width: 70%;
+    height: 550px;
+    background-image: url('/img/bg-2.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+}
+.form-item {
+    margin: 5px;
+}
+
+.form-item label{
+    font-size: 20px;
+    
+}
+
+
+
+.form-item input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(232, 232, 232);
+}
+
+.form-item input[type="text"]:focus {
+    outline: none;
+}
+
+.form-item textarea {
+    resize: none;    
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(232, 232, 232);
+
+
+}
+
+.form-item textarea:focus{
+    outline: none;
+}
+
+.form-item input[type="submit"] {
+    padding: 10px 30px;
+    border: none; 
+    border-radius: 30px;
+    background-color: #f7ca58;
+
+}
+
+.form-item input[type="submit"]:hover {
+    background-color: #e5b335;
+
+}
+
+
+.form-item  * {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+
+.footer {
+    height: 90px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333b44;
+}
+
+.footer p {
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+    font-family: "Nunito Sans", sans-serif;
+} 
+
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 
@@ -426,5 +653,18 @@
 
     .rooms-types {
         flex-direction: column;
+    }
+
+    .personal-info-items {
+        flex-direction: column;
+    }
+
+    .contact-items {
+        flex-direction: column;
+    }
+
+    .contact-bg {
+        width: 100%;
+        margin: 15px;
     }
 }

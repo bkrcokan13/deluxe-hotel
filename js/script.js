@@ -1,18 +1,14 @@
 function galleryPictures() {
 
     let pictures = [
-        "/img/2.jpg",
-        "/img/3.jpg",
-        "/img/4.jpg",
-        "/img/5.jpg",
-        "/img/6.jpg",
-        "/img/7.jpg",
-        "/img/8.jpg",
-        "/img/9.jpg",
+        "/img/blog-1.jpg",
+        "/img/blog-2.jpg",
+        "/img/blog-3.jpg",
+        "/img/blog-4.jpg",
     ];
     
 
-    let galleryBox = document.querySelectorAll(".flex-image-item");
+    let galleryBox = document.querySelectorAll(".blogs-header");
 
     galleryBox.forEach((element, index) => {
 
